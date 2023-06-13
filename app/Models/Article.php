@@ -9,9 +9,17 @@ class Article extends Model
 {
     use HasFactory;
 
-    protected $fillable=[
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+
+    protected $fillable = [
         'title',
         'content',
         'featured_image'
     ];
+
+
 }

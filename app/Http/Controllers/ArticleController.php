@@ -28,7 +28,6 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
         if ($request->file('image')) {
             $image_name = $request->file('image')->store('images', 'public');
         }
